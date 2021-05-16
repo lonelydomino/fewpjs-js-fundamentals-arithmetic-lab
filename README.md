@@ -432,3 +432,39 @@ rely on the test failure messages to guide your code.
 * [Order of Operations][pemdas]
 
 [pemdas]: https://en.wikipedia.org/wiki/Order_of_operations
+
+```js
+Number.isInteger(42);
+//=> true
+
+Number.parseInt('100', 10);
+//=> 100
+
+Number.parseFloat('3.14159');
+//=> 3.14159
+
+Math.ceil(0.5);// Round the number up
+//=> 1
+
+Math.floor(0.5);// Round the number down
+//=> 0
+
+Math.round(0.5);// Round the number up or down
+//=> 1
+
+// These two methods accept a number of arguments and return the lowest and highest constituent, respectively:
+
+Math.max(1, 2, 3, 4, 5);
+//=> 5
+
+Math.min(1, 2, 3, 4, 5);
+//=> 1
+
+Math.random();
+//=> 0.4495507082209371
+
+// In combination with some simple arithmetic and one of the rounding methods, we can generate random integers within a specific range. For example, to generate a random integer between `1` and `10`:
+
+Math.floor(Math.random() * 10) + 1;
+//=> 8
+```
